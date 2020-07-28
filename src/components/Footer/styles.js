@@ -13,4 +13,8 @@ export const FooterBase = styled.footer`
   @media (max-width: 800px) {
     margin-bottom: 50px;
   }
+  .fotimg {
+    padding: 10px;
+    text-align: center;
+  }
 `;
