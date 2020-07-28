@@ -1,0 +1,139 @@
+{
+  "categorias": [
+    {
+      "titulo": "The Score",
+      "link": "https://www.youtube.com/user/thescorenyc",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Banda de rock alternativo americana formada em Nova York no ano de 2015.",
+        "url": "https://www.youtube.com/user/thescorenyc"
+      },
+      "videos": [
+        {
+          "titulo": "THE SCORE - LEGEND",
+          "url": "https://www.youtube.com/watch?v=r1lST6mCdSA"
+        },
+        {
+          "titulo": "Unstoppable",
+          "url": "https://www.youtube.com/watch?v=_PBlykN4KIY"
+        },
+        {
+          "titulo": "Revolution",
+          "url": "https://www.youtube.com/watch?v=b99r48grKGI"
+        },
+        {
+          "titulo": "Born For This",
+          "url": "https://www.youtube.com/watch?v=EP_CDtyV41g"
+        },
+        {
+          "titulo": "In My Bones",
+          "url": "https://www.youtube.com/watch?v=2CFBHThW7Dk&list=PL9B6YR7hJGrNuU_M-RrMT_cxoxjoZZBLS&index=3"
+        }       
+      ]
+    },
+    {
+      "titulo": "Avicii",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Tim Bergling, também conhecido pelo seu nome artístico Avicii, foi um DJ, produtor, cantor, compositor e multi-instrumentista sueco.",
+        "url": "https://www.youtube.com/channel/UCPHjpfnnGklkRBBTd0k6aHg"
+      },
+      "videos": [
+        {
+          "titulo": "The Nights",
+          "url": "https://www.youtube.com/watch?v=UtF6Jej8yb4"
+        },
+        {
+          "titulo": "The Days",
+          "url": "https://www.youtube.com/watch?v=JDglMK9sgIQ"
+        },
+        {
+          "titulo": "Without You",
+          "url": "https://www.youtube.com/watch?v=WRz2MxhAdJo"
+        },
+        {
+          "titulo": "Heaven",
+          "url": "https://www.youtube.com/watch?v=fqzhtvLWefA"
+        }
+      ]
+    },
+    {
+      "titulo": "Fall Out Boy",
+      "cor": "#9cd33b",
+      "link_extra": {
+        "text": "Fall Out Boy é uma banda de pop punk formada em 2001 na cidade de Wilmette, Illinois.",
+        "url": "https://www.youtube.com/channel/UC2qWxZHgnlwDvcmLqP23jrA"
+      },
+      "videos": [
+        {
+          "titulo": "Centuries",
+          "url": "https://www.youtube.com/watch?v=LBr7kECsjcQ"
+        },
+        {
+          "titulo": "Immortals",
+          "url": "https://www.youtube.com/watch?v=l9PxOanFjxQ"
+        },
+        {
+          "titulo": "Champion",
+          "url": "https://www.youtube.com/watch?v=JJJpRl2cTJc"
+        },
+        {
+          "titulo": "Uma Thurman",
+          "url": "https://www.youtube.com/watch?v=BWJwBdy6KJs"
+        }
+      ]
+    },
+    {
+      "titulo": "Imagine Dragons",
+      "cor": "orange",
+      "link_extra": {
+        "text": "Imagine Dragons é uma banda de rock formada em Las Vegas nos Estados Unidos no ano de 2008",
+        "url": "https://www.youtube.com/user/ImagineDragons"
+      },
+      "videos": [
+        {
+          "titulo": "Natural",
+          "url": "https://www.youtube.com/watch?v=0I647GU3Jsc"
+        },
+        {
+          "titulo": "Thunder",
+          "url": "https://www.youtube.com/watch?v=fKopy74weus"
+        },
+        {
+          "titulo": "Born To Be Yours",
+          "url": "https://www.youtube.com/watch?v=mOFvJVroAJE"
+        },
+        {
+          "titulo": "Birds",
+          "url": "https://www.youtube.com/watch?v=vOXZkm9p_zY"
+        }
+      ]
+    },
+    {
+      "titulo": "Twenty One Pilots",
+      "cor": "red",
+      "link_extra": {
+        "text": "Twenty One Pilots é um duo americano originário de Columbus, Ohio. A banda foi formada em 2009.",
+        "url": "https://www.youtube.com/channel/UCBQZwaNPFfJ1gZ1fLZpAEGw"
+      },
+      "videos": [
+        {
+          "titulo": "Stressed Out",
+          "url": "https://www.youtube.com/watch?v=pXRviuL6vMY"
+        },
+        {
+          "titulo": "Ride",
+          "url": "https://www.youtube.com/watch?v=Pw-0pbY9JeU"
+        },
+        {
+          "titulo": "Chlorine",
+          "url": "https://www.youtube.com/watch?v=eJnQBXmZ7Ek"
+        },
+        {
+          "titulo": "House of Gold",
+          "url": "https://www.youtube.com/watch?v=mDyxykpYeu8"
+        }
+      ]
+    }
+  ]
+}
