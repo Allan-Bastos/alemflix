@@ -14,6 +14,14 @@ export const FooterBase = styled.footer`
     margin-bottom: 50px;
   }
   .fotimg {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    text-align: center;
+  }
+  .twtimg {
+    height: 50px;
+    width: 60px;
     padding: 10px;
     text-align: center;
   }

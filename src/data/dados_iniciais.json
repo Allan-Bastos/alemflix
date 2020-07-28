@@ -30,13 +30,9 @@
           "url": "https://www.youtube.com/watch?v=2CFBHThW7Dk&list=PL9B6YR7hJGrNuU_M-RrMT_cxoxjoZZBLS&index=3"
         },
         {
-          "titulo": "In My Bones",
-          "url": "https://www.youtube.com/watch?v=2CFBHThW7Dk&list=PL9B6YR7hJGrNuU_M-RrMT_cxoxjoZZBLS&index=3"
-        },
-        {
-          "titulo": "In My Bones",
-          "url": "https://www.youtube.com/watch?v=2CFBHThW7Dk&list=PL9B6YR7hJGrNuU_M-RrMT_cxoxjoZZBLS&index=3"
-        }       
+          "titulo": "All of Me",
+          "url": "https://www.youtube.com/watch?v=WHowaIzJYKw"
+        }      
       ]
     },
     {
@@ -62,6 +58,10 @@
         {
           "titulo": "Heaven",
           "url": "https://www.youtube.com/watch?v=fqzhtvLWefA"
+        },
+        {
+          "titulo": "SOS",
+          "url": "https://www.youtube.com/watch?v=u8tdT5pAE34"
         }
       ]
     },
@@ -88,6 +88,10 @@
         {
           "titulo": "Uma Thurman",
           "url": "https://www.youtube.com/watch?v=BWJwBdy6KJs"
+        },
+        {
+          "titulo": "The Phoenix",
+          "url": "https://www.youtube.com/watch?v=5JqY-6q-RNA"
         }
       ]
     },
@@ -114,6 +118,10 @@
         {
           "titulo": "Birds",
           "url": "https://www.youtube.com/watch?v=vOXZkm9p_zY"
+        },
+        {
+          "titulo": "West Coast",
+          "url": "https://www.youtube.com/watch?v=WQB4oNpGuDw"
         }
       ]
     },
@@ -140,6 +148,10 @@
         {
           "titulo": "House of Gold",
           "url": "https://www.youtube.com/watch?v=mDyxykpYeu8"
+        },
+        {
+          "titulo": "Level of Concern",
+          "url": "https://www.youtube.com/watch?v=loOWKm8GW6A"
         }
       ]
     }

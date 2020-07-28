@@ -9,7 +9,7 @@ function Footer() {
   return (
     <FooterBase>
         <a href="https://twitter.com/AllnBastos">
-          <img class='fotimg'src={Imgtwt} alt="Logo Twitter" />
+          <img class='twtimg'src={Imgtwt} alt="Logo Twitter" />
         </a>
         <a href="https://github.com/Allan-Bastos">
           <img class='fotimg' src={Imggit} alt="Logo Github" />
