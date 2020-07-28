@@ -3,7 +3,7 @@
     {
       "titulo": "The Score",
       "link": "https://www.youtube.com/user/thescorenyc",
-      "cor": "#6BD1FF",
+      "cor": "#F5DE03",
       "link_extra": {
         "text": "Banda de rock alternativo americana formada em Nova York no ano de 2015.",
         "url": "https://www.youtube.com/user/thescorenyc"
@@ -28,12 +28,20 @@
         {
           "titulo": "In My Bones",
           "url": "https://www.youtube.com/watch?v=2CFBHThW7Dk&list=PL9B6YR7hJGrNuU_M-RrMT_cxoxjoZZBLS&index=3"
+        },
+        {
+          "titulo": "In My Bones",
+          "url": "https://www.youtube.com/watch?v=2CFBHThW7Dk&list=PL9B6YR7hJGrNuU_M-RrMT_cxoxjoZZBLS&index=3"
+        },
+        {
+          "titulo": "In My Bones",
+          "url": "https://www.youtube.com/watch?v=2CFBHThW7Dk&list=PL9B6YR7hJGrNuU_M-RrMT_cxoxjoZZBLS&index=3"
         }       
       ]
     },
     {
       "titulo": "Avicii",
-      "cor": "#00C86F",
+      "cor": "#F5DE03",
       "link_extra": {
         "text": "Tim Bergling, também conhecido pelo seu nome artístico Avicii, foi um DJ, produtor, cantor, compositor e multi-instrumentista sueco.",
         "url": "https://www.youtube.com/channel/UCPHjpfnnGklkRBBTd0k6aHg"
@@ -59,7 +67,7 @@
     },
     {
       "titulo": "Fall Out Boy",
-      "cor": "#9cd33b",
+      "cor": "#F5DE03",
       "link_extra": {
         "text": "Fall Out Boy é uma banda de pop punk formada em 2001 na cidade de Wilmette, Illinois.",
         "url": "https://www.youtube.com/channel/UC2qWxZHgnlwDvcmLqP23jrA"
@@ -85,7 +93,7 @@
     },
     {
       "titulo": "Imagine Dragons",
-      "cor": "orange",
+      "cor": "#F5DE03",
       "link_extra": {
         "text": "Imagine Dragons é uma banda de rock formada em Las Vegas nos Estados Unidos no ano de 2008",
         "url": "https://www.youtube.com/user/ImagineDragons"
@@ -111,7 +119,7 @@
     },
     {
       "titulo": "Twenty One Pilots",
-      "cor": "red",
+      "cor": "#F5DE03",
       "link_extra": {
         "text": "Twenty One Pilots é um duo americano originário de Columbus, Ohio. A banda foi formada em 2009.",
         "url": "https://www.youtube.com/channel/UCBQZwaNPFfJ1gZ1fLZpAEGw"

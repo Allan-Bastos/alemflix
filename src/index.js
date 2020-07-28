@@ -1,14 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Home from './pages/Home';
+import CadastroVideo from './pages/cadastro/Video'
+import CadastroCategoria from './pages/cadastro/Categoria'
 
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+
+const Pagina404 = () => (<div>Error 404</div>)
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <BrowserRouter>
+    <Switch>
+      <Route path="/cadastro/video" component={CadastroVideo} />
+      <Route path="/cadastro/categoria" component={CadastroCategoria} />
+      <Route path="/" component={Home} exact />
+      <Route component={Pagina404} exact />
+    </Switch>
+  </BrowserRouter>,
+document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
