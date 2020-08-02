@@ -1,87 +1,70 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm';
 
 function CadastroCategoria() {
-  const [categorias, setCategorias] = useState([]);
-
   const valoresIniciais = {
-    nome: '',
+    titulo: '',
     descricao: '',
     cor: '#F5DE03',
   };
-  const [values, setValues] = useState(valoresIniciais);
 
-  function setValue(chave, valor) {
-    setValues({
-      ...values,
-      [chave]: valor,
-    });
-  }
+  const URL_TOP = window.location.hostname.includes('localhost')
+    ? 'http://localhost:8080/categorias/'
+    : 'https://alemflix.herokuapp.com/categorias';
 
-  function handleChange(InfosDoEvento) {
-    setValue(InfosDoEvento.target.getAttribute('name'),
-      InfosDoEvento.target.value);
+  const { values, handleChange, clearForm } = useForm(valoresIniciais);
+  const [categorias, setCategorias] = useState([]);
+  const history = useHistory();
+
+  async function handleNewcategoria(e) {
+    e.preventDefault();
+
+    try {
+      await fetch(URL_TOP, {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+    } catch (err) {
+      // eslint-disable-next-line no-alert
+      alert('Erro ao cadastrar caso, tente novamente');
+    }
+    setCategorias([...categorias, values]);
+    history.push('/');
+    clearForm();
   }
 
   useEffect(() => {
-    const URL_TOP = window.location.hostname.includes('localhost') 
-      ? 'http://localhost:8080/categorias/'
-      : 'https://alemflix.herokuapp.com/categorias';
     fetch(URL_TOP)
       .then(async (respostaDoServidor) => {
         const resposta = await respostaDoServidor.json();
         setCategorias([
           ...resposta,
         ]);
-      })
-
-    
-    /*
-    setTimeout(() => {
-      setCategorias([
-        ...categorias,
-        {
-          id: 1,
-          nome: 'Front End',
-          descricao: 'Nice',
-          cor: '#6BD1FF',
-        },
-        {
-          id: 2,
-          nome: 'Back End',
-          descricao: 'Noice',
-          cor: '#6BD1FF',
-        },
-      ]);
-    }, 4 * 1000);
-    */
+      });
   }, []);
 
   return (
     <PageDefault>
       <h1>
         Cadastro de Categoria:
-        {values.nome}
+        {values.titulo}
       </h1>
 
-      <form onSubmit={function handleSubmit(InfosDoEvento) {
-        InfosDoEvento.preventDefault();
-        setCategorias([
-          ...categorias,
-          values,
-        ]);
-        setValue(valoresIniciais);
-      }}
-      >
+      <form onSubmit={handleNewcategoria}>
 
         <FormField
-          label="Nome da Categoria"
+          label="Titulo da Categoria"
           type="text"
-          name="nome"
-          value={values.nome}
+          name="titulo"
+          value={values.titulo}
           onChange={handleChange}
         />
 
@@ -114,14 +97,16 @@ function CadastroCategoria() {
 
       <ul>
         {categorias.map((categoria) => (
-          <li key={`${categoria.nome}`}>
-            {categoria.nome}
+          <li key={`${categoria.titulo}`}>
+            {categoria.titulo}
           </li>
         ))}
       </ul>
-      <Link to="/">
-        Go Home
-      </Link>
+      <Button>
+        <Link to="/">
+          Go Home
+        </Link>
+      </Button>
     </PageDefault>
   );
 }

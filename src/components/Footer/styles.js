@@ -6,7 +6,7 @@ export const FooterBase = styled.footer`
   border-top: 2px solid var(--primary);
   padding-left: 16px;
   padding-right: 16px;
-  padding-top: 32px;
+  padding-top: 20px;
   padding-bottom: 32px;
   color: var(--white);
   text-align: center;

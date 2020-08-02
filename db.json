@@ -2,15 +2,132 @@
   "categorias": [
     {
       "id": 1,
-      "nome": "Front End",
-      "descricao": "Nice",
-      "cor": "#6BD1FF"
+      "titulo": "The Score",
+      "descricao": "Banda The Score",
+      "cor": "#F5DE03",
+      "link_extra": {}
     },
     {
       "id": 2,
-      "nome": "Back End",
-      "descricao": "Noice",
-      "cor": "#6BD1FF"
+      "titulo": "Avicii",
+      "descricao": "F Avicii",
+      "cor": "#F5DE03",
+      "link_extra": {}
+    },
+    {
+      "id": 3,
+      "titulo": "Fall Out Boy",
+      "descricao": "Banda Fall Out Boy",
+      "cor": "#F5DE03",
+      "link_extra": {}
+    },
+    {
+      "id": 4,
+      "titulo": "Alan Walker",
+      "descricao": "Dj Alan Walker",
+      "cor": "#F5DE03",
+      "link_extra": {
+        "text": "Alan Olav Walker é um DJ e produtor musical norueguês, nascido em Northampton, no Reino Unido.",
+        "url": "https://www.youtube.com/channel/UCJrOtniJ0-NWz37R30urifQ"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "THE SCORE - LEGEND",
+      "url": "https://www.youtube.com/watch?v=r1lST6mCdSA"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Unstoppable",
+      "url": "https://www.youtube.com/watch?v=_PBlykN4KIY"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "Revolution",
+      "url": "https://www.youtube.com/watch?v=b99r48grKGI"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "Born For This",
+      "url": "https://www.youtube.com/watch?v=EP_CDtyV41g"
+    },
+    {
+      "id": 5,
+      "categoriaId": 2,
+      "titulo": "The Nights",
+      "url": "https://www.youtube.com/watch?v=UtF6Jej8yb4"
+    },
+    {
+      "id": 6,
+      "categoriaId": 2,
+      "titulo": "The Days",
+      "url": "https://www.youtube.com/watch?v=JDglMK9sgIQ"
+    },
+    {
+      "id": 7,
+      "categoriaId": 2,
+      "titulo": "Without You",
+      "url": "https://www.youtube.com/watch?v=WRz2MxhAdJo"
+    },
+    {
+      "id": 8,
+      "categoriaId": 2,
+      "titulo": "Heaven",
+      "url": "https://www.youtube.com/watch?v=fqzhtvLWefA"
+    },
+    {
+      "id": 9,
+      "categoriaId": 3,
+      "titulo": "Centuries",
+      "url": "https://www.youtube.com/watch?v=LBr7kECsjcQ"
+    },
+    {
+      "id": 10,
+      "categoriaId": 3,
+      "titulo": "Immortals",
+      "url": "https://www.youtube.com/watch?v=l9PxOanFjxQ"
+    },
+    {
+      "id": 10,
+      "categoriaId": 3,
+      "titulo": "Champion",
+      "url": "https://www.youtube.com/watch?v=JJJpRl2cTJc"
+    },
+    {
+      "id": 10,
+      "categoriaId": 3,
+      "titulo": "Uma Thurman",
+      "url": "https://www.youtube.com/watch?v=BWJwBdy6KJs"
+    },
+    {
+      "id": 11,
+      "categoriaId": 4,
+      "titulo": "Sing Me To Sleep",
+      "url": "https://www.youtube.com/watch?v=2i2khp_npdE"
+    },
+    {
+      "id": 12,
+      "categoriaId": 4,
+      "titulo": "End of Time",
+      "url": "https://www.youtube.com/watch?v=Oj18EikZMuU"
+    },
+    {
+      "id": 13,
+      "categoriaId": 4,
+      "titulo": "PLAY",
+      "url": "https://www.youtube.com/watch?v=YQRHrco73g4"
+    },
+    {
+      "id": 14,
+      "categoriaId": 4,
+      "titulo": "Unity",
+      "url": "https://www.youtube.com/watch?v=E3x_dLVTEuA"
     }
   ]
 }
