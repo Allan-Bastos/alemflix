@@ -20,6 +20,16 @@ function CadastroCategoria() {
   const [categorias, setCategorias] = useState([]);
   const history = useHistory();
 
+  useEffect(() => {
+    fetch(URL_TOP)
+      .then(async (respostaDoServidor) => {
+        const resposta = await respostaDoServidor.json();
+        setCategorias([
+          ...resposta,
+        ]);
+      });
+  }, []);
+
   async function handleNewcategoria(e) {
     e.preventDefault();
 
@@ -41,15 +51,22 @@ function CadastroCategoria() {
     clearForm();
   }
 
-  useEffect(() => {
-    fetch(URL_TOP)
-      .then(async (respostaDoServidor) => {
-        const resposta = await respostaDoServidor.json();
-        setCategorias([
-          ...resposta,
-        ]);
+  async function handleRemovecategoria(e) {
+    const target = String(e.target.getAttribute('target'));
+    e.preventDefault();
+    const URL_TOP_ID = `${URL_TOP}/${target}`
+    try {
+      await fetch(URL_TOP_ID, {
+        method: 'DELETE',
       });
-  }, []);
+    } catch (err) {
+      // eslint-disable-next-line no-alert
+      alert('Erro ao deletar caso, tente novamente');
+    }
+    setCategorias([...categorias, values]);
+    history.push('/');
+    clearForm();
+  }
 
   return (
     <PageDefault>
@@ -98,10 +115,17 @@ function CadastroCategoria() {
       <ul>
         {categorias.map((categoria) => (
           <li key={`${categoria.titulo}`}>
-            {categoria.titulo}
+            {`${categoria.titulo} / ${categoria.descricao} / ${categoria.id} `}
+            <button
+              target={categoria.id}
+              onClick={handleRemovecategoria}
+            >
+              Remover
+            </button>
           </li>
         ))}
       </ul>
+
       <Button>
         <Link to="/">
           Go Home
