@@ -6,6 +6,7 @@ import FormField from '../../../components/FormField';
 import useForm from '../../../hooks/useForm';
 import videosRepository from '../../../repositories/videos';
 import categoriasRepository from '../../../repositories/categorias';
+import './video.css';
 
 function CadastroVideo() {
   const history = useHistory();
@@ -68,12 +69,12 @@ function CadastroVideo() {
           suggestions={categoryTitles}
         />
 
-        <Button type="submit">
+        <Button className="cadastro" type="submit">
           Cadastrar
         </Button>
       </form>
 
-      <div>
+      <div className="IrHome">
         <Link to="/cadastro/categoria">
           <Button>
             Cadastrar Categoria

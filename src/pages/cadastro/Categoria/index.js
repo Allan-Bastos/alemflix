@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom';
+import uuid from 'uuid';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
+import {
+  Table, Titulo, Container, Conteudo,
+} from '../../../components/Tabela';
+import './categoria.css';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -54,7 +59,7 @@ function CadastroCategoria() {
   async function handleRemovecategoria(e) {
     const target = String(e.target.getAttribute('target'));
     e.preventDefault();
-    const URL_TOP_ID = `${URL_TOP}/${target}`
+    const URL_TOP_ID = `${URL_TOP}/${target}`;
     try {
       await fetch(URL_TOP_ID, {
         method: 'DELETE',
@@ -101,7 +106,7 @@ function CadastroCategoria() {
           onChange={handleChange}
         />
 
-        <Button>
+        <Button className="cadastro">
           Cadastrar
         </Button>
       </form>
@@ -111,26 +116,38 @@ function CadastroCategoria() {
           Loading...
         </div>
       )}
-
-      <ul>
+      <Table>
+        <Container>
+          <Titulo>Titulo</Titulo>
+          <Titulo>Descrição</Titulo>
+          <Titulo>Editar</Titulo>
+          <Titulo className="ultimo">Remover</Titulo>
+        </Container>
+        {categorias.lenght === 0 && <div>Loading...</div>}
         {categorias.map((categoria) => (
-          <li key={`${categoria.titulo}`}>
-            {`${categoria.titulo} / ${categoria.descricao} / ${categoria.id} `}
-            <button
-              target={categoria.id}
-              onClick={handleRemovecategoria}
-            >
-              Remover
-            </button>
-          </li>
+          <Container key={uuid()}>
+            <Conteudo>{categoria.titulo}</Conteudo>
+            <Conteudo>{categoria.descricao}</Conteudo>
+            <Conteudo />
+            <Conteudo>
+              <Conteudo.Paragrafo
+                target={categoria.id}
+                onClick={handleRemovecategoria}
+              >
+                Remover
+              </Conteudo.Paragrafo>
+            </Conteudo>
+          </Container>
         ))}
-      </ul>
+      </Table>
 
-      <Button>
-        <Link to="/">
-          Go Home
-        </Link>
-      </Button>
+      <div className="IrHome">
+        <Button>
+          <Link to="/">
+            Go Home
+          </Link>
+        </Button>
+      </div>
     </PageDefault>
   );
 }
